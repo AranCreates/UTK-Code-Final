@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <Title>Audio Player</Title>
+        <link rel="stylesheet" href="style.css">
         <style>
             #playlist{
                 list-style: none;
@@ -19,17 +20,35 @@
     </head>
 
     <body>
+        <div class="container">
+
+        <!--Aesthetic-->
+
+        <div>
+            <img src = "image\UTLogo.png" class="utk"></img>
+        </div>
+
         <!--music player-->
-        <audio src="" controls id="audioPlayer"></audio>
-        <div id="skip">
+        <div class="box">
+        <audio src="" controls id="audioPlayer" class="soundBox"></audio>
+        <div id="skip" class="skips">
             <li><i class="fa-solid fa-forward-step"></i></li>
+        </div>
         </div>
 
         <!--playlist-->
+        <div class="list">
+        <h1>Playlist</h1>
         <ul id="playlist">
             <li class="current-song"><a href="audio\Track 1.mp3">Interview: William A. McClain 1</a></li>
             <li><a href="audio\Track 2.mp3">Interview: William A. McClain 2</a></li>
         </ul>
+        </div>
+
+        <div class="Transcription">
+            <p>Transcription</p>
+        </div>
+        
 
         <!--JS Plugin-->
         <script src="https://code.jquery.com/jquery-2.2.0.js">
@@ -40,7 +59,17 @@
         <script>
             audioPlayer();
         </script>
-       
+
+        </div>
+
+        <!--Transcription for WCAG 2.0 Accessibility Standards-->
+        <div class="container2">
+
+            
+
+
+        </div>
+
     </body>
 
 </html>
