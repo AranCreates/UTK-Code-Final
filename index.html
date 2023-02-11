@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://kit.fontawesome.com/ee2f3823c8.js" crossorigin="anonymous"></script>
     <head>
         <meta charset="UTF-8">
         <Title>Audio Player</Title>
@@ -20,7 +21,10 @@
     <body>
         <!--music player-->
         <audio src="" controls id="audioPlayer"></audio>
-        
+        <div id="skip">
+            <li><i class="fa-solid fa-forward-step"></i></li>
+        </div>
+
         <!--playlist-->
         <ul id="playlist">
             <li class="current-song"><a href="audio\Track 1.mp3">Interview: William A. McClain 1</a></li>
@@ -36,6 +40,7 @@
         <script>
             audioPlayer();
         </script>
+       
     </body>
 
 </html>
