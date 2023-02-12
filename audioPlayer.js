@@ -25,5 +25,8 @@ function audioPlayer(){
         currentSong++;
         $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
         $("#audioPlayer")[0].play();
+        $("#playlist li").removeClass("current-song");
+         currentSong = $(this).parent().index();
+         $(this).parent().addClass("current-song");
     });
 }
