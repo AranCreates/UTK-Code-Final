@@ -21,6 +21,7 @@ function audioPlayer(){
          $("#audioPlayer")[0].play();
     });
 
+        
     $("#skip li i").click(function(){
         currentSong++;
         $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
